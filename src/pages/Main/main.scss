@@ -1,0 +1,67 @@
+#root {
+  height: 100vh;
+  padding: 1.5rem;
+}
+main {
+  height: 100%;
+}
+.container {
+  position: relative;
+  padding: 1.5rem;
+  height: 100%;
+  min-height: 30rem;
+  width: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
+}
+
+.metamask-box {
+  position: absolute;
+  display: flex;
+  padding: 1rem;
+  background-color: rgba(#e4dcdc, 0.3);
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 0.5rem 0.5rem 0.3rem rgba(#000, 0.15);
+}
+
+.metamask-icon {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-weight: 500;
+  border: 1px solid #000;
+  border-radius: 7px;
+  margin-bottom: 1.5rem;
+  background-color: rgba(0, 188, 187, 0.43);
+  &:hover {
+    box-shadow: 0.5rem 0.5rem 0.3rem rgba(#000, 0.15);
+    transform: translateY(-2px);
+  }
+  &:active {
+    box-shadow: 0.2rem 0.2rem 0.3rem rgba(#000, 0.15);
+    transform: translateY(0);
+  }
+}
+
+.metamask-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 600;
+  &__item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
